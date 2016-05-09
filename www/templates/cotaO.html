@@ -1,0 +1,25 @@
+<ion-view title="Cotação" id="page5" style="background-color:#2A5934;">
+<ion-content padding="true" class="has-header">
+<h1 id="cotaO-heading1" style="color:#FFFFFF;font-weight:600;text-align:center;">Cotação Atualizada</h1>
+<ion-list>
+<ion-item>
+<strong>Maior valor do dia: </strong> R$ {{cotacao.high}}
+</ion-item>
+<ion-item>
+<strong>Preço de compra: </strong> R$ {{cotacao.bid}}
+</ion-item>
+<ion-item>
+<strong>Menor valor do dia: </strong> R$ {{cotacao.low}}
+</ion-item>
+<ion-item>
+<strong>Média diária:</strong> R$ {{media}}
+</ion-item>
+<ion-item>
+<strong>Média dos últimos 4 dias:</strong> R$ {{media4}}
+</ion-item>
+</ion-list>
+<div id="cotaO-markdown1" style="color:#FFFFFF;text-align:right;">
+    <p>Última atualização: {{ultimaAtt | date:'dd/MM HH:mm:ss'}}</p>
+</div>
+</ion-content>
+</ion-view>
